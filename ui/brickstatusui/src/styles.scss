@@ -45,14 +45,34 @@ $custom-theme: mat-light-theme($custom-primary, $custom-accent);
 // Include the theme
 @include angular-material-theme($custom-theme);
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {  font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 
 
 //colors 219C90, E9B824, EE9322, D83F31
+.page-container{
+  min-height:100vh;
+}
 
+.background-title{
+  background-color: #219C90;
+  text-align: center;
+}
+
+.search-container{
+  background-color: #E9B824;
+}
+
+.footer-container {
+  background-color: #EE9322;
+}
 // Modify the search button within the input group
-.input-group-append .btn {
+.search-btn {
   // Your custom styles for the search button
   background-color: #007bff; /* Your desired background color */
   color: #ffffff; /* Text color */
@@ -60,8 +80,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 // Hover and focus styles (optional)
-.input-group-append .btn:hover, 
-.input-group-append .btn:focus {
+.search-btn:hover, 
+.search-btn:focus {
   background-color: #0056b3; /* Adjusted color on hover/focus */
   color: #ffffff;
   border-color: #0056b3;
