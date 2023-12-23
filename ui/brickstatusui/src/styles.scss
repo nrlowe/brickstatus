@@ -47,3 +47,22 @@ $custom-theme: mat-light-theme($custom-primary, $custom-accent);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+//colors 219C90, E9B824, EE9322, D83F31
+
+// Modify the search button within the input group
+.input-group-append .btn {
+  // Your custom styles for the search button
+  background-color: #007bff; /* Your desired background color */
+  color: #ffffff; /* Text color */
+  border-color: #007bff; /* Border color */
+}
+
+// Hover and focus styles (optional)
+.input-group-append .btn:hover, 
+.input-group-append .btn:focus {
+  background-color: #0056b3; /* Adjusted color on hover/focus */
+  color: #ffffff;
+  border-color: #0056b3;
+}
