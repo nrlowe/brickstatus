@@ -57,19 +57,28 @@ body {  font-family: Roboto, "Helvetica Neue", sans-serif; }
 //colors 219C90, E9B824, EE9322, D83F31
 .page-container{
   min-height:100vh;
+  position: relative;
+  background-color: #EE9322;
 }
 
 .background-title{
   background-color: #219C90;
   text-align: center;
+  min-height: 25vh;
+  padding-top: 10vh;
 }
 
 .search-container{
   background-color: #E9B824;
+  min-height: 25vh;
+  padding-top: 10vh;
 }
 
 .footer-container {
-  background-color: #EE9322;
+  background-color: #D83F31;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 // Modify the search button within the input group
 .search-btn {
